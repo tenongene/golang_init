@@ -25,20 +25,6 @@ func main () {
 	//initializing pointers
 	i := 10
 	var ptr3 *int = &i
-	
-	//can also be initialized without specifying data-type
-	s := "hello"
-	var ptr4 = &s
-
-	//can also be intialized by short hand and not specifying var keyword
-	str := "hey"
-	ptr5 := &str
-
-	fmt.Println(ptr3, ptr4, ptr5)
-	fmt.Println(*ptr3, *ptr4, *ptr5) //dereferencing using *<pointer_name>
-
-	//changing value at specific address using the pointer
-	*ptr5 = "Good day"
-	fmt.Println(*ptr5)
+	s :
 
 }

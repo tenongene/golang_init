@@ -39,6 +39,5 @@ func main () {
 
 	//changing value at specific address using the pointer
 	*ptr5 = "Good day"
-	fmt.Println(*ptr5)
 
 }

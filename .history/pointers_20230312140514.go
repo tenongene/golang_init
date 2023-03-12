@@ -38,7 +38,6 @@ func main () {
 	fmt.Println(*ptr3, *ptr4, *ptr5) //dereferencing using *<pointer_name>
 
 	//changing value at specific address using the pointer
-	*ptr5 = "Good day"
-	fmt.Println(*ptr5)
+	*ptr5 = "Goo"
 
 }
