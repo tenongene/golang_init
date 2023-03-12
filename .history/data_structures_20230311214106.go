@@ -64,38 +64,6 @@ func main() {
 
 	//copy from a slice - syntax:  func copy(dst, src []Type) - both slices must have the same data types
 	dest_slice := make([]int, 3)
-	num := copy(dest_slice, slice4)
-	fmt.Println(dest_slice)
-	fmt.Println(num)
+	nu := copy(slice)
 	
-
-
-	//MAPS
-	// declaring syntax:   var <map_name> map[<data_type_for_key>]<data_type_for_value>  -- then initialize
-	// initializing syntax: <map_name> := map[<data_type_for_key>]<data_type_for_value>{<key-value-pairs}
-
-	// var codes map[string]string
-	codes := map[string]string{"en":"English", "fr":"French"}
-	fmt.Println(codes)
-
-	//map using "make"
-	// <map_name> := make(map[<data_type_for_key>]<data_type_for_value>, <initial_capacity_optional>)
-	// codes1 := make(map[string]int)
-
-	//getting map value from key: map[<key>] -- returns 2 values: theValue, andBooleanIfItExists
-	fmt.Println(codes["en"])
-	value, found := codes["fr"]
-	fmt.Println(value, found)
-
-	//add new key-pair to a map
-	codes["it"] = "Italian"
-	fmt.Println(codes)
-
-	//range function for maps returns key and value
-	for key, value := range codes {
-		fmt.Println(key, "=>", value)
-	}
-
-	//Truncating a map (clearing and delete all elements to make empty)
-	//Reinitialize using 'make' or 'range' using 'delete(key,value)
 }

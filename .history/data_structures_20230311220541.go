@@ -95,7 +95,4 @@ func main() {
 	for key, value := range codes {
 		fmt.Println(key, "=>", value)
 	}
-
-	//Truncating a map (clearing and delete all elements to make empty)
-	//Reinitialize using 'make' or 'range' using 'delete(key,value)
 }

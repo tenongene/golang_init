@@ -92,10 +92,5 @@ func main() {
 	fmt.Println(codes)
 
 	//range function for maps returns key and value
-	for key, value := range codes {
-		fmt.Println(key, "=>", value)
-	}
-
-	//Truncating a map (clearing and delete all elements to make empty)
-	//Reinitialize using 'make' or 'range' using 'delete(key,value)
+	for key, value = 
 }

@@ -97,5 +97,5 @@ func main() {
 	}
 
 	//Truncating a map (clearing and delete all elements to make empty)
-	//Reinitialize using 'make' or 'range' using 'delete(key,value)
+	//Reinitialize using make
 }

@@ -44,7 +44,6 @@ func main() {
 	//can create slice of a slice
 	subslice := slice1[0:3]
 	fmt.Println(subslice)
-	fmt.Println(cap(subslice))
 
 	//declaring a slice using "make" - syntax   slice := make([]<data_type>, length, capacity)
 	//usually used to create empty slice - capacity must be specified
@@ -53,49 +52,6 @@ func main() {
 	fmt.Println(len(slice2))        
 	fmt.Println(cap(slice2))        
 
-	//appending to slice  - syntax:   func append (<slice>[]<data_type, values) []T
-	//capacity is doubled if new append exceeds capacity
-	slice3 := append(subslice, 10, 20, 30)
-	fmt.Println(slice3)
-
-	//append 2 slices using a "..." operator
-	slice4 := append(slice3, slice1...)
-	fmt.Println(slice4)
-
-	//copy from a slice - syntax:  func copy(dst, src []Type) - both slices must have the same data types
-	dest_slice := make([]int, 3)
-	num := copy(dest_slice, slice4)
-	fmt.Println(dest_slice)
-	fmt.Println(num)
+	//appending to slice  - synta  func
 	
-
-
-	//MAPS
-	// declaring syntax:   var <map_name> map[<data_type_for_key>]<data_type_for_value>  -- then initialize
-	// initializing syntax: <map_name> := map[<data_type_for_key>]<data_type_for_value>{<key-value-pairs}
-
-	// var codes map[string]string
-	codes := map[string]string{"en":"English", "fr":"French"}
-	fmt.Println(codes)
-
-	//map using "make"
-	// <map_name> := make(map[<data_type_for_key>]<data_type_for_value>, <initial_capacity_optional>)
-	// codes1 := make(map[string]int)
-
-	//getting map value from key: map[<key>] -- returns 2 values: theValue, andBooleanIfItExists
-	fmt.Println(codes["en"])
-	value, found := codes["fr"]
-	fmt.Println(value, found)
-
-	//add new key-pair to a map
-	codes["it"] = "Italian"
-	fmt.Println(codes)
-
-	//range function for maps returns key and value
-	for key, value := range codes {
-		fmt.Println(key, "=>", value)
-	}
-
-	//Truncating a map (clearing and delete all elements to make empty)
-	//Reinitialize using 'make' or 'range' using 'delete(key,value)
 }
