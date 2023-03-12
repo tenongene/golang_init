@@ -1,2 +1,2 @@
 # golang_init
-GoLang
+Learning GoLang
